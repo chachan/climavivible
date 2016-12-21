@@ -1,0 +1,6 @@
+# Site settings
+baseurl = "/"
+languageCode = "en-us"
+title = "Citizen's Climate Lobby Panamá"
+theme = ""
+
