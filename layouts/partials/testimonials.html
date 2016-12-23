@@ -1,0 +1,66 @@
+{{ "<!-- TESTIMONIALS -->" | safeHTML }}
+<section class="bg-blue" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-3">
+                        <hr class="pst-left">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-heading bg-grey">{{ .Site.Params.testimonials.headline }}</h2>
+                    </div>
+                    <div class="col-lg-3">
+                       <hr class="pst-right">
+                    </div>
+                </div>
+            </div>
+            
+            {{ $img1 := printf "img/testimonials/%s" .Site.Params.testimonials.img1 }}
+            {{ $img2 := printf "img/testimonials/%s" .Site.Params.testimonials.img2 }}
+            
+            <div class="row">
+            <div id="ninja-slider">
+                <div class="slider-inner">
+                <ul>
+
+            {{ range .Site.Data.testimonials }}
+            <li class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-2">
+                        <img src="{{ $img1 | absURL }}" class="pst-left">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>{{ .testimony }}</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="{{ $img2 | absURL }}" class="pst-right">
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                   
+                        <div class="col-lg-8">
+                            <div class="text-right">
+                                <div class="text-person-name">
+                                    {{.name}}
+                                </div>
+                                <div class="text-person-position">
+                                    {{.position}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-left">
+                                {{ $url := printf "img/testimonials/%s" .img }}
+                                <img src="{{ $url | absURL }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </li>
+            
+            {{ end }}
+            </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,26 @@
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "js/jquery.js" | absURL }}"></script>
+{{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+{{ "<!-- Plugin JavaScript -->" | safeHTML }}
+<script src="{{ "js/jquery.easing.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
+<script src="{{ "js/wow.min.js" | absURL }}"></script>
+{{ if .Site.Params.location }}
+<script src="//maps.googleapis.com/maps/api/js?key={{ .Site.Params.location.maps_api_key }}&v=3.exp"></script>
+<script src="{{ "js/hpneo.gmaps.js" | absURL }}"></script>
+<script src="{{ "js/gmaps.init.js" | absURL }}"></script>
+{{ end }}
+
+<script src="{{ "js/creative.js" | absURL }}"></script>
+<script src="{{ "js/ninja-slider.js" | absURL }}"></script>
+
+{{ "<!-- Facebook Plugin -->" | safeHTML }}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
