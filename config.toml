@@ -35,12 +35,29 @@ paginate = 10
 		logo = "logo.png"
 		brand = "Ciudadanos por un clima vivible"
 
-		[params.navigation.links]
-			about     = "About"
-			services  = "Services"
-			portfolio = "Portfolio"
-			contact   = "Contact"
+		[[params.navigation.main]]
+			name = "NOSOTROS"
+			url = "/#about"
 
+		[[params.navigation.main]]
+			name = "VOLUNTARIOS"
+			url = "/#about"
+
+		[[params.navigation.main]]
+			name = "TARIFAS DE CARBONO"
+			url = "/#about"
+
+		[[params.navigation.secundary]]
+			name = "INGLÉS"
+			url = "/#about"
+		
+		[[params.navigation.secundary]]
+			name = "SITIO OFICIAL"
+			url = "/#about"
+		
+		[[params.navigation.secundary]]
+			name = "ÚNETE"
+			url = "/#about"
 
 	# Hero section
 	[params.hero]

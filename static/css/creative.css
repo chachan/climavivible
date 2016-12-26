@@ -136,12 +136,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #44bee1;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #44bee1;
 }
 
 .navbar-default .nav > li>a,
@@ -154,18 +154,44 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #44bee1;
+    border-bottom: 3px solid #b3dd09;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #44bee1!important;
     background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
+}
+
+.navbar-border {
+    float: left;
+    margin: 0;
+    border: 2px solid #222;
+}
+
+.navcs {
+    text-decoration: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-border > a:hover,
+.navbar-border>a:focus:hover{
+    background-color: #44bee1!important;
+    color: #222!important;
+    border: none!important;
+    text-decoration: none;
+}
+
+.navbar-border > a{
+    padding: 10px 8px!important;
 }
 
 @media(min-width:768px) {
@@ -180,7 +206,8 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: #44bee1;
+        border-bottom: 5px solid #b3dd09;
     }
 
     .navbar-default .nav > li>a,
@@ -190,7 +217,7 @@ aside {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: #44bee1;
     }
 
     .navbar-default.affix {
@@ -200,12 +227,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #44bee1;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #44bee1;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -215,7 +242,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #44bee1;
     }
 }
 
@@ -537,9 +564,8 @@ body {
 /*Add Styles*/
 .img-responsive {
   display: block;
-  max-width: 100%;
-  height: auto;
-  width: 80%;
+  height: 100px;
+  width: 500px;
 }
 
 .bold {
@@ -548,4 +574,13 @@ body {
 
 .img-left {
   float: left;
+}
+
+.navbar-nav {
+    padding-left: 80px;
+    padding-top: 25px;
+}
+
+.nav-menu {
+    padding-top: 25px;
 }
