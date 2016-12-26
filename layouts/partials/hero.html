@@ -4,11 +4,11 @@
         <div class="header-content-inner">
             
             {{ with .Site.Params.hero.slogan }}
-                <h3 class="bold">{{ . | markdownify }}</h3>
+                <h3>{{ . | markdownify }}</h3>
             {{ end }}
         </div>
          {{ with .Site.Params.hero.buttonText }}
-                <a href="#about" class="btn btn-primary btn-xl page-scroll bold">{{ . }}</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ . }}</a>
             {{ end }}
     </div>
 </header>
