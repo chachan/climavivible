@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 hr {
@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -125,7 +125,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -134,7 +134,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: #44bee1;
 }
@@ -147,7 +147,7 @@ aside {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     color: #222;
 }
@@ -173,6 +173,7 @@ aside {
     float: left;
     margin: 0;
     border: 2px solid #222;
+    box-shadow: 0 -3px 0 #e0e0e0, 0 3px 0 #e0e0e0;
 }
 
 .navcs {
@@ -191,7 +192,7 @@ aside {
 }
 
 .navbar-border > a{
-    padding: 10px 8px!important;
+    padding: 10px 5px!important;
 }
 
 @media(min-width:768px) {
@@ -371,7 +372,7 @@ header .header-content .header-content-inner h3 {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -521,7 +522,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
