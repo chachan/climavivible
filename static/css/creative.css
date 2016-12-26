@@ -585,3 +585,7 @@ body {
 .nav-menu {
     padding-top: 25px;
 }
+
+.hr-blue {
+    border-color: #44bee1;
+}
