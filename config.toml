@@ -68,7 +68,6 @@ paginate = 10
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
 		description = """\
 					  Somos Ciudadanos por un Clima Vivible, el capítulo panameño de Citizens Climate Lobby. CCL es \
 					  una organización internacional donde hacemos lo necesario para apoyar a nuestras autoridades \
@@ -76,7 +75,6 @@ paginate = 10
 					  necesitan saber que las personas están de acuerdo: Necesitan el respaldo de sus electores. \
 					  Todo lo que hacemos es con gratitud y respecto, nuestra única regla. ¡Les agradezco unirse a CCL y \
 					  ser parte de la solución!"""
-		buttonText  = "Get started!"
 
 	# Testimony section
 	[params.testimonials]
@@ -89,56 +87,32 @@ paginate = 10
 
 	[params.socials]
 		headline = "NUESTRAS REDES SOCIALES"
+		twitterLink = "https://twitter.com/CCLPanamaCity"
+		twitterAccount = "CCLPanamaCity"
+		facebookLink = "https://www.facebook.com/CCLPanamaCity"
+		facebookAccount = "Ciudadanos por un Clima Vivible - CCL Panamá"
 
-	# Service section
-	[params.services]
-		headline = "At your service"
+	# Navigation Footer
+	[[params.footer.nav]]
+		name = "Nosotros"
+		url = "/#about"
+	
+	[[params.footer.nav]]
+		name = "Voluntarios"
+		url = "/#about"
 
-        [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
+	[[params.footer.nav]]
+		name = "Tarifas de carbono"
+		url = "/#about"
 
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
-
-		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
-
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
-
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
-
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
-
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
-
-	# Google Maps section
-	# [params.location]
-	# 	latitude  = "34.007850"
-	# 	longitude = "-118.499305"
-	# 	maps_api_key = ""
+	[[params.footer.nav]]
+		name = "Versión Inglés"
+		url = "/#about"
+	
+	[[params.footer.nav]]
+		name = "Sitio oficial"
+		url = "/#about"
+	
+	[[params.footer.nav]]
+		name = "Únete"
+		url = "/#about"

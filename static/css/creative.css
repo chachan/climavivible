@@ -140,7 +140,8 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
+.navbar-defa
+t .navbar-header .navbar-brand:focus {
     color: #44bee1;
 }
 
@@ -588,4 +589,40 @@ body {
 
 .hr-blue {
     border-color: #44bee1;
+}
+
+.padding-socials {
+    padding-top: 50px;
+}
+
+.footer-nav {
+    padding: 10px 20px;
+}
+
+.footer-nav li {
+    padding: 20px 0px;
+    list-style: none;
+    
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-right {
+    float: right;
+}
+
+.footer-info {
+    padding-left: 50px;
+}
+
+.footer-info p {
+    font-family: 'Oswald Light', sans-serif;
+}
+
+.footer-terms {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 30px;
 }

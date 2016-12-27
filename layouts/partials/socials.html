@@ -14,19 +14,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row padding-socials">
                 <div class="col-lg-6">
                     <a class="twitter-timeline" 
-                    href="https://twitter.com/CCLPanamaCity"
+                    href="{{ .Site.Params.socials.twitterLink }}"
                     data-limit="3"
                     data-width="500"
-                    data-height="500">Tweets by TwitterDev</a> 
+                    data-height="500">Tweets de @{{ .Site.Params.socials.twitterAccount }}</a> 
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
                 <div class="col-lg-6">
                     <div 
                         class="fb-page" 
-                        data-href="https://www.facebook.com/CCLPanamaCity" 
+                        data-href="{{ .Site.Params.socials.facebookLink }}" 
                         data-tabs="timeline" 
                         data-small-header="false" 
                         data-adapt-container-width="true" 
@@ -34,9 +34,9 @@
                         data-show-facepile="true"
                         data-width="500"
                         data-height="500">
-                        <blockquote cite="https://www.facebook.com/CCLPanamaCity" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/CCLPanamaCity">
-                            Ciudadanos por un Clima Vivible - CCL Panamá</a>
+                        <blockquote cite="{{ .Site.Params.socials.facebookLink }}" class="fb-xfbml-parse-ignore">
+                        <a href="{{ .Site.Params.socials.facebookLink }}">
+                            {{ .Site.Params.socials.facebookAccount }}</a>
                         </blockquote>
                     </div>
                 </div>
