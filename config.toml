@@ -83,7 +83,7 @@ paginate = 10
 		img2 = "quotes2.png" 
 	
 	[params.video]
-		link = "http://www.youtube.com/embed/uGQnqojqhN0?html5=1"
+		link = "https://www.youtube.com/embed/uGQnqojqhN0?html5=1"
 
 	[params.socials]
 		headline = "NUESTRAS REDES SOCIALES"
