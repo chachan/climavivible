@@ -7,6 +7,11 @@ theme = ""
 # Define the number of posts per page
 paginate = 10
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+
 [params]
 
 	# You can use Markdown syntax for urls [text](//url.to/source) for
@@ -29,7 +34,6 @@ paginate = 10
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
 
-
 	# Navigation
 	[params.navigation]
 		logo = "logo.png"
@@ -41,11 +45,11 @@ paginate = 10
 
 		[[params.navigation.main]]
 			name = "VOLUNTARIOS"
-			url = "/#about"
+			url = "/voluntarios"
 
 		[[params.navigation.main]]
 			name = "TARIFAS DE CARBONO"
-			url = "/#about"
+			url = "/tarifas"
 
 		[[params.navigation.secundary]]
 			name = "INGLÉS"

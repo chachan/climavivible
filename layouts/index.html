@@ -4,8 +4,9 @@
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
+        <section>
         {{ partial "nav.html" . }}
-
+        </section>
 
         {{ if .Site.Params.hero }}
             {{ partial "hero.html" . }}
@@ -24,7 +25,5 @@
         {{ partial "footer.html" . }}
 
         {{ partial "js.html" . }}
-
-        {{ template "_internal/google_analytics.html" . }}
     </body>
 </html>

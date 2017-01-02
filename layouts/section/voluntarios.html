@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+        <section>
+        {{ partial "nav.html" . }}
+        </section>
+
+        {{ range first 1 .Data.Pages }}
+        <section class="title-header">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-3">
+                        <hr class="pst-left hr-blue">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-heading bg-blue">
+                            {{ .Title }}
+                        </h2>
+                    </div>
+                    <div class="col-lg-3">
+                    <hr class="pst-right hr-blue">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="voluntarios">
+            <div class="container">
+        
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="col-lg-6">
+                        <h3 class="text-center">{{.Params.h31}}</h3>
+                        {{ range $i, $value := .Params.d31 }}
+                        <div class="col-lg-12 caraceristics">
+                            {{ $values := split $value "/" }}
+                             {{ $url := index $values 0}}
+                             {{ $img := printf "img/volunteers/%s" $url}}
+                            <div class="col-lg-2">
+                                <img src="{{ $img | absURL }}">
+                            </div>
+                            <div class="col-lg-10">
+                                {{index $values 1}}
+                            </div>
+                        </div>
+                        {{ end }}
+                      </div>
+                      <div class="col-lg-6">
+                        <h3 class="text-center">{{.Params.h32}}</h3>
+                       
+                        {{ range $i, $value := .Params.d32 }}
+                         <div class="col-lg-12 caraceristics">
+                            {{ $values := split $value "/" }}
+                            {{ $url := index $values 0}}
+                            {{ $img := printf "img/volunteers/%s" $url}}
+                            <div class="col-lg-2">
+                                <img src="{{ $img | absURL }}">
+                            </div>
+                            <div class="col-lg-10">
+                                {{index $values 1}}
+                            </div>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        {{ end }}
+        {{ range after 1 .Data.Pages }}
+            <div class="row">
+                    
+                    <div class="col-lg-12 questions">
+                        <h3>
+                            <a class="" data-toggle="collapse" href="#collapse1">{{.Title}}</a>
+                        </h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">{{.Content}}</div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+        {{ end }}
+        
+        {{ partial "footer.html" . }}
+        {{ partial "js.html" . }}
+        <script>
+            $(document).ready(function(){
+                $('.collapsible').collapsible();
+            });
+        
+        </script>
+    </body>
+</html>
