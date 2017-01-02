@@ -626,3 +626,25 @@ body {
     border-top: 2px solid #e0e0e0;
     padding-top: 30px;
 }
+
+.title-header {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #d0d0d0;
+    box-shadow: inset 2px 5px 5px #888888;
+}
+
+.caraceristics {
+    padding: 20px;
+    text-align: justify;
+}
+
+.questions {
+    background-color: #f0f0f0;
+    border: 2px solid #d0d0d0;
+    padding-left: 70px;
+}
+
+.questions a {
+    text-decoration: none;
+    color: #252525 !important;
+}
