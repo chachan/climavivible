@@ -7,7 +7,7 @@
                     <ul class="footer-nav">
                     {{ range .Site.Params.footer.nav }}
                         <li>
-                            <a href="{{.url}}">{{.name}}</a>
+                            <a href="{{.url}}"><h5>{{.name}}</h5></a>
                         </li>
                     {{end }}
                     </ul>
@@ -17,7 +17,7 @@
                     <form action="//formspree.io/your@email.com" method="POST" name="sentMessage" id="contactForm" class="has-validation-callback disabled-with-errors">
                         <fieldset>
                             <div class="row">
-                               
+                
                                 <div class="form-group">
                                     <h5>Nombre</h5>
                                     <input class="form-control" id="name" required="required" type="text" name="name" placeholder="Nombre" data-validation-error-msg="Please enter your name." data-validation="required" data-validation-event="keyup change">

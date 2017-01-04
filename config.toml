@@ -28,8 +28,8 @@ paginate = 10
 
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	name = "Citizen's Climate Lobby Panamá"
+	description = "Citizen's Climate Lobby Panamá"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -53,11 +53,11 @@ paginate = 10
 
 		[[params.navigation.secundary]]
 			name = "INGLÉS"
-			url = "/#about"
+			url = "https://citizensclimatelobby.org/"
 		
 		[[params.navigation.secundary]]
 			name = "SITIO OFICIAL"
-			url = "/#about"
+			url = "http://citizensclimatelobby.org/chapters/PAN_Panama_City/"
 		
 		[[params.navigation.secundary]]
 			name = "ÚNETE"
@@ -103,19 +103,19 @@ paginate = 10
 	
 	[[params.footer.nav]]
 		name = "Voluntarios"
-		url = "/#about"
+		url = "/voluntarios"
 
 	[[params.footer.nav]]
 		name = "Tarifas de carbono"
-		url = "/#about"
+		url = "/tarifas"
 
 	[[params.footer.nav]]
 		name = "Versión Inglés"
-		url = "/#about"
+		url = "https://citizensclimatelobby.org/"
 	
 	[[params.footer.nav]]
 		name = "Sitio oficial"
-		url = "/#about"
+		url = "http://citizensclimatelobby.org/chapters/PAN_Panama_City/"
 	
 	[[params.footer.nav]]
 		name = "Únete"
