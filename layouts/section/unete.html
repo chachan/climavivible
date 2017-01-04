@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+        <section>
+        {{ partial "nav.html" . }}
+        </section>
+
+        {{ range first 1 .Data.Pages }}
+        <section class="title-header">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-3">
+                        <hr class="pst-left hr-blue">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-heading bg-blue">
+                            {{ .Title }}
+                        </h2>
+                    </div>
+                    <div class="col-lg-3">
+                    <hr class="pst-right hr-blue">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-6 unt-pd border-div">
+                        <h3>{{.Params.headline1}}</h3>
+                        <form action="//formspree.io/your@email.com" method="POST" name="sentMessage" id="contactForm" class="has-validation-callback disabled-with-errors">
+                        <fieldset>
+                            <div class="row form-pd">
+                               
+                                <div class="form-group">
+                                    <input class="form-control form-40" id="name" required="required" type="text" name="name" placeholder="Nombre" data-validation-error-msg="Please enter your name." data-validation="required" data-validation-event="keyup change">
+                                    <input class="form-control form-40" id="lastname" required="required" type="text" name="name" placeholder="Apellido" data-validation-error-msg="Please enter your name." data-validation="required" data-validation-event="keyup change">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" required="required" type="email" name="email" placeholder="Email" data-validation-error-msg="Please enter your email address." data-validation="required email" data-validation-event="keyup change">
+                                </div>
+                                
+                                <button type="submit" value="Submit" class="btn btn-blue btn-xl page-scroll">Únete a nosotros</button>
+                            </div>
+                        </fieldset>
+                        </form>
+                        <p  class="caraceristics">{{.Params.content1}}</p>
+                    </div>
+                    <div class="col-lg-6 unt-pd">
+                        <h3>{{.Params.headline2}}</h3>
+                        <p  class="caraceristics">{{.Params.content2}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+        {{end}}
+
+        
+        {{ partial "footer.html" . }}
+        {{ partial "js.html" . }}
+    </body>
+</html>

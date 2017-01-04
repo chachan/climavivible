@@ -61,7 +61,7 @@ paginate = 10
 		
 		[[params.navigation.secundary]]
 			name = "ÚNETE"
-			url = "/#about"
+			url = "/unete"
 
 	# Hero section
 	[params.hero]
@@ -119,4 +119,4 @@ paginate = 10
 	
 	[[params.footer.nav]]
 		name = "Únete"
-		url = "/#about"
+		url = "/unete"

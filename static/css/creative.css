@@ -736,3 +736,24 @@ a i{
 .panel-body {
     padding: 0px 100px;
 }
+
+.border-div {
+    border: 2px solid #d0d0d0;;
+}
+
+.unt-pd {
+    padding: 30px;
+}
+
+.form-40 {
+    display: inline;
+    width: 49%;
+}
+
+.form-pd {
+    padding: 30px 50px;
+}
+
+.btn-blue {
+    background-color: #44bee1;
+}

@@ -7,8 +7,8 @@
                 <h3>{{ . | markdownify }}</h3>
             {{ end }}
         </div>
-         {{ with .Site.Params.hero.buttonText }}
+        {{ with .Site.Params.hero.buttonText }}
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ . }}</a>
-            {{ end }}
+        {{ end }}
     </div>
 </header>
