@@ -24,3 +24,15 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+  $(".collapsee").click(function() {
+
+    if ($(this).children().hasClass( "icon-plus" )){
+      $(this).children().removeClass("icon-plus").addClass("icon-minus");
+    } else {
+       $(this).children().removeClass("icon-minus").addClass("icon-plus");
+    }
+      
+  });
+</script>

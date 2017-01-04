@@ -113,12 +113,16 @@
                 
                 <div class="col-lg-12 questions">
                     <h3>
-                        <a class="" data-toggle="collapse" href="#{{.Params.id}}">{{.Title}}</a>
+                        <a class="" data-toggle="collapse" href="#{{.Params.id}}">{{.Title}}
+                             <i class="icon-plus"></i>
+                        </a>
                     </h3>
                 </div>
                 <div class="col-lg-12">
                     <div id="{{.Params.id}}" class="panel-collapse collapse">
-                        <div class="panel-body">{{.Content}}</div>
+                        <div class="panel-body">
+                            <p>{{.Content}}</p>
+                        </div>
                     </div>
                 </div>
                 

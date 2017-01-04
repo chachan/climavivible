@@ -45,7 +45,7 @@
                                 <img src="{{ $img | absURL }}">
                             </div>
                             <div class="col-lg-10">
-                                {{index $values 1}}
+                                <p>{{index $values 1}}</p>
                             </div>
                         </div>
                         {{ end }}
@@ -62,7 +62,7 @@
                                 <img src="{{ $img | absURL }}">
                             </div>
                             <div class="col-lg-10">
-                                {{index $values 1}}
+                                <p>{{index $values 1}}</p>
                             </div>
                         </div>
                         {{ end }}
@@ -78,12 +78,19 @@
                     
                     <div class="col-lg-12 questions">
                         <h3>
-                            <a class="" data-toggle="collapse" href="#{{.Params.id}}">{{.Title}}</a>
+                            <a class="collapsee" 
+                            data-toggle="collapse"
+                            href="#{{.Params.id}}"
+                            >
+                                {{.Title}}
+                                <i class="icon-plus"></i>
+                            </a>
                         </h3>
                     </div>
                     <div class="col-lg-12">
                         <div id="{{.Params.id}}" class="panel-collapse collapse">
-                            <div class="panel-body">{{.Content}}</div>
+                            <div class="panel-body">
+                                <p>{{.Content}}</p></div>
                             
                             
                         </div>
@@ -95,11 +102,5 @@
         
         {{ partial "footer.html" . }}
         {{ partial "js.html" . }}
-        <script>
-            $(document).ready(function(){
-                $('.collapsible').collapsible();
-            });
-        
-        </script>
     </body>
 </html>

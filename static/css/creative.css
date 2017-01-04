@@ -58,7 +58,7 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
     font-weight: 300;
 }
@@ -645,7 +645,7 @@ body {
 .questions {
     background-color: #f0f0f0;
     border: 2px solid #d0d0d0;
-    padding-left: 70px;
+    padding-left: 15%;
 }
 
 .questions a {
@@ -726,4 +726,13 @@ section::after {
 
 #unete {
     padding: 100px 0px;
+}
+
+a i{
+    float: right;
+    padding-right: 100px; 
+}
+
+.panel-body {
+    padding: 0px 100px;
 }
