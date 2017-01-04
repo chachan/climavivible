@@ -22,6 +22,9 @@ handlers:
 - url: /(.+)
   static_files: public/\1/index.html
   upload: public/(.+)/index.html
+- url: /(.*)/$
+  static_files: public/\1/index.html
+  upload: .*\.html$
 
 
 skip_files:
