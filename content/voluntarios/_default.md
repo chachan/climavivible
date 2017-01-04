@@ -1,5 +1,5 @@
 +++
-title = "Voluntarios"
+title = "VOLUNTARIOS"
 draft = true
 date = "2016-12-30T16:00:01-04:00"
 
@@ -21,15 +21,3 @@ d32 = [
 ]
 +++
 
-
-Bienvenido a los ciudadanos por el clima vivible Panamá, Educamos y presionamos por un precio predecible, de forma incremental cada vez mayor y justo sobre la política de la contaminación de carbono llamada "La Ley de Dividendos Cuota de carbono"
-¿Está usted interesado en la fundación de un capítulo en su área? Aquí hay algunos recursos para ayudarle a empezar.
-Puesta en marcha y construcción de un Grupo  - consejos para encontrar defensores de ideas afines
-CCL Canadá Cartel del reclutamiento - 8,5 x 11
-Aquí es parte de la información básica acerca de lo que somos y lo que hacemos. Si tiene alguna duda, no dude en ponerse en contacto con nosotros .
-Fundamentos CCL - Material de referencia en el objetivo y la estructura del vestíbulo del Clima de los ciudadanos
-Una Solución: La Cuota de carbono y dividendos Ac t - Nuestra propuesta legislativa para el que cabildeamos
-Las llamadas acciones pasadas y mensuales  - Archivo de nuestras llamadas internacionales mensuales y tareas de cada mes
-Las conversaciones láser - descripciones breves de una serie de temas de interés para CCL, desde el impacto del TLC sobre el precio de carbono y dividendos al impacto de China sobre el clima global.
-El pequeño motor que podría: Cuota de carbono y dividendos - Propuesta de CCL para el clima del MIT CoLab 2014
-Diez Estrategias clave de un cabildero ciudadano Climático

@@ -78,11 +78,11 @@
                     
                     <div class="col-lg-12 questions">
                         <h3>
-                            <a class="" data-toggle="collapse" href="#collapse1">{{.Title}}</a>
+                            <a class="" data-toggle="collapse" href="#{{.Params.id}}">{{.Title}}</a>
                         </h3>
                     </div>
                     <div class="col-lg-12">
-                        <div id="collapse1" class="panel-collapse collapse">
+                        <div id="{{.Params.id}}" class="panel-collapse collapse">
                             <div class="panel-body">{{.Content}}</div>
                             
                             
