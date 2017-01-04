@@ -16,6 +16,10 @@ handlers:
   static_dir: public/js
 - url: /img
   static_dir: public/img
+- url: /tarifas
+  static_dir: public/tarifas
+- url: /voluntarios
+  static_dir: public/voluntarios
 - url: /(.*)/$
   static_files: public/\1/index.html
   upload: .*\.html$

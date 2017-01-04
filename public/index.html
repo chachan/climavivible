@@ -14,9 +14,7 @@
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" rel="stylesheet" type='text/css'>
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
 <!-- Plugin CSS -->
 <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
@@ -24,6 +22,7 @@
 <link rel="stylesheet" href="/css/creative.css" type="text/css">
 <link rel="stylesheet" href="/css/modals.css" type="text/css">
 <link rel="stylesheet" href="/css/ninja-slider.css" type="text/css">
+<link rel="stylesheet" href="/css/plus.css" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -437,6 +436,18 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+  $(".collapsee").click(function() {
+
+    if ($(this).children().hasClass( "icon-plus" )){
+      $(this).children().removeClass("icon-plus").addClass("icon-minus");
+    } else {
+       $(this).children().removeClass("icon-minus").addClass("icon-plus");
+    }
+      
+  });
+</script>
 
     </body>
 </html>
