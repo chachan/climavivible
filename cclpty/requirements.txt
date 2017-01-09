@@ -1,0 +1,6 @@
+Django==1.9
+gunicorn==19.6.0
+google-cloud-datastore
+pyyaml
+nosegae
+nose
