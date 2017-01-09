@@ -1,19 +1,13 @@
 {{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "js/jquery.js" | absURL }}"></script>
+<script src="{{ "static/js/jquery.js" | absURL }}"></script>
 {{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
-<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "static/js/bootstrap.min.js" | absURL }}"></script>
 {{ "<!-- Plugin JavaScript -->" | safeHTML }}
-<script src="{{ "js/jquery.easing.min.js" | absURL }}"></script>
-<script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
-<script src="{{ "js/wow.min.js" | absURL }}"></script>
-{{ if .Site.Params.location }}
-<script src="//maps.googleapis.com/maps/api/js?key={{ .Site.Params.location.maps_api_key }}&v=3.exp"></script>
-<script src="{{ "js/hpneo.gmaps.js" | absURL }}"></script>
-<script src="{{ "js/gmaps.init.js" | absURL }}"></script>
-{{ end }}
-
-<script src="{{ "js/creative.js" | absURL }}"></script>
-<script src="{{ "js/ninja-slider.js" | absURL }}"></script>
+<script src="{{ "static/js/jquery.easing.min.js" | absURL }}"></script>
+<script src="{{ "static/js/jquery.fittext.js" | absURL }}"></script>
+<script src="{{ "static/js/wow.min.js" | absURL }}"></script>
+<script src="{{ "static/js/creative.js" | absURL }}"></script>
+<script src="{{ "static/js/ninja-slider.js" | absURL }}"></script>
 
 {{ "<!-- Facebook Plugin -->" | safeHTML }}
 <div id="fb-root"></div>
@@ -27,12 +21,10 @@
 
 <script>
   $(".collapsee").click(function() {
-
     if ($(this).children().hasClass( "icon-plus" )){
       $(this).children().removeClass("icon-plus").addClass("icon-minus");
     } else {
        $(this).children().removeClass("icon-minus").addClass("icon-plus");
     }
-      
   });
 </script>

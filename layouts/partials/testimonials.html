@@ -15,8 +15,8 @@
                 </div>
             </div>
             
-            {{ $img1 := printf "img/testimonials/%s" .Site.Params.testimonials.img1 }}
-            {{ $img2 := printf "img/testimonials/%s" .Site.Params.testimonials.img2 }}
+            {{ $img1 := printf "static/img/testimonials/%s" .Site.Params.testimonials.img1 }}
+            {{ $img2 := printf "static/img/testimonials/%s" .Site.Params.testimonials.img2 }}
             
             <div class="row">
             <div id="ninja-slider">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="img-left">
-                                {{ $url := printf "img/testimonials/%s" .img }}
+                                {{ $url := printf "static/img/testimonials/%s" .img }}
                                 <img src="{{ $url | absURL }}" alt="">
                             </div>
                         </div>

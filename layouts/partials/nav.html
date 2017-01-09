@@ -5,7 +5,7 @@
         <div class="navbar-header">
             {{ if .Site.Params.navigation.logo }}
             <a class="page-scroll" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
-                {{ $url := printf "img/nav/%s" .Site.Params.navigation.logo }}
+                {{ $url := printf "static/img/nav/%s" .Site.Params.navigation.logo }}
                 <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.navigation.brand }}">
             </a>
             {{ end }}

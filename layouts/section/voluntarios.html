@@ -40,7 +40,7 @@
                         <div class="col-lg-12 caraceristics">
                             {{ $values := split $value "/" }}
                              {{ $url := index $values 0}}
-                             {{ $img := printf "img/volunteers/%s" $url}}
+                             {{ $img := printf "static/img/volunteers/%s" $url}}
                             <div class="col-lg-2">
                                 <img src="{{ $img | absURL }}">
                             </div>
@@ -57,7 +57,7 @@
                          <div class="col-lg-12 caraceristics">
                             {{ $values := split $value "/" }}
                             {{ $url := index $values 0}}
-                            {{ $img := printf "img/volunteers/%s" $url}}
+                            {{ $img := printf "static/img/volunteers/%s" $url}}
                             <div class="col-lg-2">
                                 <img src="{{ $img | absURL }}">
                             </div>

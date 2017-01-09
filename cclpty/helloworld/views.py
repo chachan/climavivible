@@ -15,11 +15,12 @@
 
 
 from django.http import HttpResponse
+from django.template import loader
 from helloworld.models import Greeting
 
 
 def index(request):
     content = Greeting(content='Sandy')
-    content.put()
-    return HttpResponse(
-        'Hello, World. This is Django running on Google App Engine')
+    template = loader.get_template('index.html')
+    #content.put()
+    return HttpResponse(template.render({}, request))
